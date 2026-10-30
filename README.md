@@ -13,3 +13,5 @@ Kumar Nishkarsh
 
 ## Enrollment Number
 2581286
+CampusNotes helps students organize and access
+their academic study materials easily.
