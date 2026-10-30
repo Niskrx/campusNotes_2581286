@@ -13,3 +13,9 @@ Kumar Nishkarsh
 
 ## Enrollment Number
 2581286
+
+## Project Features
+
+- Organize campus notes.
+- Access study materials easily.
+- Simple and user-friendly interface.
