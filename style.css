@@ -10,3 +10,7 @@ h1 {
 }
 
 /* Updating through the cloned repo for VCS Assignment */
+h1:hover {
+    color: #253feb;
+    transition: color 0.3s ease;
+}
