@@ -15,3 +15,6 @@ Kumar Nishkarsh
 2581286
 CampusNotes helps students organize and access
 their academic study materials easily.
+### New Contribution
+Added project information as part of GitHub
+collaboration and pull request practice.
