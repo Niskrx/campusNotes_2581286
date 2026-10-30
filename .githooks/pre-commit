@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if git diff --cached --name-only --diff-filter=ACMR |
+while IFS= read -r file
+do
+    case "$file" in
+        .githooks/*) continue ;;
+    esac
+
+    if [ -f "$file" ] && grep -nE 'TODO|FIXME' "$file"; then
+        exit 1
+    fi
+done
+then
+    exit 0
+else
+    echo "ERROR: Commit blocked! Remove TODO or FIXME from staged files."
+    exit 1
+fi

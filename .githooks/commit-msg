@@ -1,0 +1,20 @@
+#!/bin/sh
+
+commit_msg_file="$1"
+commit_msg=$(cat "$commit_msg_file")
+
+if [ "${#commit_msg}" -lt 10 ]; then
+    echo "ERROR: Commit message must be at least 10 characters."
+    exit 1
+fi
+
+case "$commit_msg" in
+    feat:*|fix:*|docs:*|style:*|refactor:*|test:*|chore:*|perf:*|ci:*|build:*|revert:*)
+        ;;
+    *)
+        echo "ERROR: Commit message must start with a Conventional Commit prefix."
+        exit 1
+        ;;
+esac
+
+exit 0
